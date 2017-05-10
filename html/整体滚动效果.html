@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片滚动整体</title>
+	<script src="jquery-1.6.4.min.js"></script>
+	<style>
+	.show{
+		width:500px;
+		height:300px;
+		overflow:hidden;
+		position:relative;
+		margin:0 auto;
+		z-index:0;
+	}
+	.pic{
+		width:2000px;
+		height:300px;
+		position:absolute;
+		z-index:0;
+	}
+	.pic>img{
+		display: block;
+		position:absolute;
+		width:500px;
+		height:300px;
+		display:none;
+	}
+	.bj{
+		cursor:pointer;
+		width:20px;
+		height:50px;
+		background:rgba(0,0,0,0.5);
+		position:absolute;
+		top:125px;
+		left:480px;
+		color:#fff;
+		text-align:center;
+		line-height: 50px;
+		z-index:10;
+		display:none;
+	}
+	.bj1{
+		cursor:pointer;
+		width:20px;
+		height:50px;
+		background:rgba(0,0,0,0.5);
+		position:absolute;
+		top:125px;
+		color:#fff;
+		text-align:center;
+		line-height: 50px;
+		z-index:10;
+		display:none;
+	}
+	.up1{
+		display: block;
+		cursor:pointer;
+		position:absolute;
+		top:270px;
+		left:380px;
+		z-index:12;
+	}
+	.up1>span{
+		cursor:pointer;
+		width:10px;
+		height:20px;
+		color:#00f;
+		z-index:12;
+		margin-right:10px;
+	}
+	.bjs{
+		background-color: #f00;
+	}
+	</style>
+</head>
+<body>
+	<script>
+	$(function(){
+		$("#show").mouseover(function(){
+			$("#bj").show();
+			$("#bj1").show();
+			clearInterval(j);
+		})
+		$("#show").mouseout(function(){
+			$("#bj").hide();
+			$("#bj1").hide();
+			j=setInterval(loop,2000);
+		})
+		var a=0;
+		var c=3;
+		function loop(){	
+			$("#pic").children("img").eq(a).siblings().hide();		
+			$("#pic").children("img").eq(a).show();				
+			$("#up1").children("span").eq(a).siblings().removeClass("bjs")
+			$("#up1").children("span").eq(a).addClass("bjs");
+			a++;
+			if(a>3){a=0}			
+		}
+		j=setInterval(loop,2000);
+		$("#up1").children("span").mouseover(function(){
+			var bb=$(this).index();
+			$("#pic").children("img").eq(bb).siblings().hide();
+			$("#pic").children("img").eq(bb).show();
+			$("#up1").children("span").eq(bb).siblings().removeClass("bjs")
+			$("#up1").children("span").eq(bb).addClass("bjs");
+		})
+	   $("#bj").click(function(){
+	   	a++;
+	   	if(a>3){a=0}
+	   	$("#pic").children("img").eq(a).siblings().hide();		
+		$("#pic").children("img").eq(a).show();	
+		$("#up1").children("span").eq(a).siblings().removeClass("bjs");
+		$("#up1").children("span").eq(a).addClass("bjs");		
+		})
+	   $("#bj1").click(function(){
+	   	a--;
+	   	if(a<0){a=3}
+	   	$("#pic").children("img").eq(a).siblings().hide();		
+		$("#pic").children("img").eq(a).show();	
+		$("#up1").children("span").eq(a).siblings().removeClass("bjs");
+		$("#up1").children("span").eq(a).addClass("bjs");		
+		})
+	   	
+	   
+
+	})
+	</script>
+	<div class="show" id="show"><div class="bj" id="bj">></div><div class="bj1" id="bj1"><</div><div class="up1" id="up1"><span class="bjs">1</span><span>2</span><span>3</span><span>4</span></div><div class="pic" id="pic"><img src="timg.jpg" style="display:block"><img src="timg1.jpg"><img src="timg2.jpg"><img src="timg3.jpg"></div></div>
+</body>
+</html>

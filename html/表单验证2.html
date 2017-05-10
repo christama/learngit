@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证</title>
+	<script src="jquery/jquery-1.6.4.min.js"></script>
+	<style>
+	.ri{
+		color:#0f0;
+	}
+	.f{
+		color:#f00;
+	}
+
+	</style>
+</head>
+<body>
+	<form action="滚动图片.html">
+	<label>用户名:<input type="text" name="text"><span class="r">*</span></label><br>
+	<label>密码:<input type="password" name="pwd"><span class="r">*</span></label><br>
+	<input type="submit" name="sub" value="提交">
+	<input type="reset" name="res" value="重置">
+	</form>
+	<script>
+	$(document).ready(function(){
+		$strt="输入正确";
+	$("form input[name=text]").keyup(function(){
+		$tel=/^(13|15|17|18)[0-9]{9}$/;
+		if($tel.test($(this).val())){
+			$(this).next("span").html($strt);
+			$(this).next("span").attr("class","r ri");
+		}else{
+			$(this).next("span").html("请输入正确的手机号");
+			$(this).next("span").attr("class","r f");
+		}
+		}).focus(function(){
+			$(this).triggerHandler("keyup");
+		}).blur(function(){
+			$(this).triggerHandler("keyup");
+		})
+		$("form input[name=pwd]").keyup(function(){
+			if($(this).val().length==6){
+				$(this).next("span").html($strt);
+			$(this).next("span").attr("class","r ri");
+		}else{
+			$(this).next("span").html("请输入正确的密码");
+			$(this).next("span").attr("class","r f");
+		}
+		}).focus(function(){
+			$(this).triggerHandler("keyup");
+		}).blur(function(){
+			$(this).triggerHandler("keyup");
+		})
+		$("form input[name=sub]").click(function(event){
+			$("span[class~=r]").each(function(){
+				if($(this).html()!=$strt){
+					$(this).prev("input").triggerHandler("keyup");
+					event.preventDefault();
+				}
+			})
+		})
+
+	})
+	
+	</script>
+</body>
+</html>

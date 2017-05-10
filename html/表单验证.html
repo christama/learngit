@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证</title>
+	<script src="jquery/jquery-1.6.4.min.js"></script>
+	<style>
+	.r{
+		color:#0f0;
+	}
+	.w{
+		color:#f00;
+	}
+	</style>
+</head>
+<body>
+	<form action="滚动图片.html">
+	用户名:<input type="text" name="text" id="text"><span id="sp1">*</span><br>
+	密码:<input type="password" name="pwd" id="pwd"><span id="sp2">*</span><br>
+	<input type="submit" name="sub" value="提交" id="sub">
+	<input type="reset" name="res" value="重置" id="res">
+	</form>
+	<script>
+	$(document).ready(function(){
+
+		
+		$("#text").keyup(function(){
+			var str=$("#text").val();
+			var ret=/^(18|17|15|14)[0-9]{9}$/;
+			if(ret.test(str)){
+				$("#sp1").html("输入正确");
+				$("#sp1").attr("class","r");
+			}else{
+				$("#sp1").html("输入错误");
+				$("#sp1").attr("class","w");
+			}
+		}).focus(function(){
+			$(this).triggerHandler("keyup");
+		}).blur(function(){
+			$(this).triggerHandler("keyup");
+		})
+		$("#pwd").keyup(function(){
+			var strs=$("#pwd").val();
+			var rets=/^\w\d{5}$/;
+			if(rets.test(strs)){
+				$("#sp2").html("输入正确");
+				$("#sp2").attr("class","r");
+			}else{
+				$("#sp2").html("输入错误");
+				$("#sp2").attr("class","w");
+			}
+		}).focus(function(){
+			$(this).triggerHandler("keyup");
+		}).blur(function(){
+			$(this).triggerHandler("keyup");
+		})
+		$("#sub").click(function(event){
+			if($("#sp2").html()=="输入错误"||$("#sp1").html()=="输入错误"||$("#text").val()==""||$("#pwd").val()==""){
+				event.preventDefault();
+			}
+		})
+		$("#res").click(function(){
+			$("#sp1").html("*");
+			$("#sp2").html("*");
+		})
+		
+		})
+
+	
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二级菜单</title>
+	<script type="text/javascript" src="jquery/jquery-1.6.4.min.js"></script>
+	<style>
+	
+	.menu>ul{
+		width:200px;
+		height:auto;
+		list-style-type: none;
+	}
+	.menu>ul>li{
+		width:200px;
+		height:auto;
+		background-color:#f00;
+		text-align:center;
+	}
+	.menu>ul>li>ul{
+		width:200px;
+		list-style-type: none;
+		margin-left:-40px;
+		display:none;
+	}
+	.menu>ul>li>ul>li{
+		background-color:#ccc;
+	}
+	</style>
+</head>
+<body>
+	<script>
+	$(document).ready(function(){
+		$("#click1").children("li:has(ul)").mouseenter(function(){
+			$(this).children("ul:hidden").slideDown(800);
+		}).mouseleave(function(){
+			$(this).children("ul:visible").slideUp(800);
+		})
+	})
+	</script>
+	<div class="menu" id="menu">
+		<ul id="click1">
+			<li><a href="#">产品介绍</a>
+				<ul>
+					<li>公司简介</li>
+					<li>公司简介</li>
+					<li>公司简介</li>
+					<li>公司简介</li>					
+				</ul>
+			</li>
+			<li><a href="#">南湾人明</a>
+				<ul>
+					<li>公司简介</li>
+					<li>公司简介</li>
+					<li>公司简介</li>
+					<li>公司简介</li>					
+				</ul>
+			</li>
+			<li><a href="#">一年薪资</a>
+				<ul>
+					<li>公司简介</li>
+					<li>公司简介</li>
+					<li>公司简介</li>
+					<li>公司简介</li>					
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+</body>
+</html>

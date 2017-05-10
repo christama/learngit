@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery-1.6.4.min.js"></script>
+	<style>
+	.box{
+		width:1300px;
+		height:300px;
+		position:relative;
+	}
+	.left{
+		width:300px;
+		height:200px;
+		position: absolute;
+		margin-top:50px;
+		overflow:hidden;
+		z-index:0;
+	}
+	.pic{
+		width:900px;
+		height:200px;
+		float:left;
+		margin-left:-300px;
+		position: absolute;
+	}
+	.pic>img{
+		float:left;
+		width:300px;
+		height:200px;
+		
+		/*display: none;*/
+	}
+	 .pic1{
+		width:900px;
+		height:200px;
+		float:left;
+		position: absolute;
+	 } 
+	.right{
+		width:300px;
+		height:200px;
+		position: absolute;
+		overflow:hidden;		
+		left:500px;
+		margin-top:50px;
+		z-index:0;
+	}
+	.pic2{
+		width:900px;
+		height:200px;
+		margin-left:-300px;
+		position: absolute;
+	}
+	.pic2>img{
+		float:left;
+		width:300px;
+		height:200px;
+	}
+	.middle{
+		width:400px;
+		height:300px;
+		overflow:hidden;	
+		position: absolute;
+		left:200px;
+		z-index:10;
+	}
+	.pic1{
+		width:1200px;
+		height:300px;
+		margin-left:-400px;
+		position: absolute;
+
+	}
+	.pic1>img{
+		float:left;
+		width:400px;
+		height:300px;
+		/*position:absolute;*/
+	}
+	</style>
+</head>
+<body>
+	<div class="box" id="menu">
+		<div class="left">
+			<div style="width:300px;height:200px;background:rgba(0,0,0,0.2);position:absolute;z-index:100;"></div>
+			<div  class="pic" id="pic"><img src="c.jpg"><img src="b.jpg"><img src="a.jpg"></div></div>
+		<div class="middle">
+			<div class="pic1" id="pic1"><img src="b.jpg"><img src="a.jpg"><img src="c.jpg">	</div></div>
+		<div class="right">
+			<div style="width:300px;height:200px;background:rgba(0,0,0,0.2);position:absolute;z-index:100;"></div>
+			<div class="pic2" id="pic2">
+			<img src="a.jpg">	<img src="c.jpg"><img src="b.jpg" style="display:block;"></div>		
+		</div>
+	</div>
+	<input type="button" value="左" id="left">
+	<input type="button" value="右" id="right">
+	<script>
+	$(function(){
+		$("#left").click(function(){
+		$("#right").stop();	
+			$("#pic").animate({"left":"-=300px"},1000,function(){
+				$(this).append($(this).children("img").first());
+				$(this).css("left","+=300px");
+			})
+			$("#pic1").animate({"left":"-=400px"},1000,function(){
+				$(this).append($(this).children("img").first());
+				$(this).css("left","+=400px");
+			})
+			$("#pic2").animate({"left":"-=300px"},1000,function(){
+				$(this).append($(this).children("img").first());
+				$(this).css("left","+=300px");
+			})
+		})
+		$("#right").click(function(){
+		$("#left").stop();	
+			$("#pic").animate({"left":"+=300px"},1000,function(){
+				$(this).children().first().before($(this).children().last())
+				$(this).css("left","-=300px");
+			})
+			$("#pic1").animate({"left":"+=400px"},1000,function(){
+				$(this).children().first().before($(this).children().last())
+				$(this).css("left","-=400px");
+			})
+			$("#pic2").animate({"left":"+=300px"},1000,function(){
+				$(this).children().first().before($(this).children().last())
+				$(this).css("left","-=300px");
+			})
+		})
+			
+			
+
+		
+	})
+	</script>
+	
+</body>
+</html>

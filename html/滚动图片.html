@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滚动图片</title>
+	<script src="jquery/jquery-1.6.4.min.js"></script>
+	<style>
+	.show{
+		width:200px;
+		height:200px;
+		overflow:hidden;
+		text-align:center;
+		position:relative;
+	}
+	.pic{
+		width:600px;
+		height:200px;	
+		position:absolute;	
+	}
+	.pic>img{
+		width:200px;
+		height:200px;
+	}
+	</style>
+</head>
+<body>
+	<div class="show" id="show"><div class="pic" id="pic"><img src="a.jpg"><img src="b.jpg"><img src="c.jpg"></div></div>
+	<script>
+	$(document).ready(function(){
+		function loop(){
+			$("#pic").animate({"left":"-=200px"},3000,function(){
+				$(this).append($(this).children().first());
+				$(this).css("left","0px");
+			});
+		}
+		j=setInterval(loop,2000);
+	})
+	</script>
+	
+</body>
+</html>
