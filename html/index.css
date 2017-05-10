@@ -1,0 +1,306 @@
+.banner{
+	width:6.4rem;
+	height:3rem;
+	position:absolute;
+	z-index:0;
+}
+.banner>img{
+	width:6.4rem;
+	height:3rem;
+	display: block;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:0;
+	display:none;
+}
+.xb{
+	width:0.5rem;
+	height:0.5rem;
+	position:absolute;
+	z-index:2;
+	top:2.5rem;
+	left:5.5rem;;
+}
+
+.xb>span{
+	width:0.1rem;
+	height:0.1rem;
+	position:absolute;
+	z-index:3;
+	background-color:#fff;
+}
+.xb>p{
+	float:left;
+	width:0.2rem;
+	height:0.2rem;
+}
+.title1{
+	width:6.4rem;
+	height:1.2rem;
+	position:absolute;
+	top:4.6rem;
+}
+.title1>p{
+	width:6.4rem;
+	height:0.6rem;
+	display: block;
+	text-align: center;
+	font-size:0.3rem;
+	line-height:0.6rem;
+}
+.protect1{
+	width:6.4rem;
+	height:3rem;
+	position:absolute;
+	top:5.8rem;
+}
+.protect1>img{
+	width:6.4rem;
+	height:3rem;
+	
+}
+.title2{
+	position:absolute;
+	top:8.8rem;
+	width:6.4rem;
+	height:0.6rem;
+	display: block;
+	text-align: center;
+	font-size:0.3rem;
+	line-height:0.6rem;
+	border-bottom:dotted  0.02rem #ccc;
+}
+.protect2{
+	width:6.4rem;
+	height:3rem;
+	position:absolute;
+	top:9.7rem;
+}
+.protect2>img{
+	width:6.4rem;
+	height:3rem;
+	
+}
+.title3{
+	position:absolute;
+	top:12.7rem;
+	width:6.4rem;
+	height:0.6rem;
+	display: block;
+	text-align: center;
+	font-size:0.3rem;
+	line-height:0.6rem;
+	border-bottom:dotted  0.02rem #ccc;
+}
+.protect3{
+	width:6.4rem;
+	height:3rem;
+	position:absolute;
+	top:13.6rem;
+}
+.protect3>img{
+	width:6.4rem;
+	height:3rem;
+	
+}
+.title4{
+	position:absolute;
+	top:16.6rem;
+	width:6.4rem;
+	height:0.6rem;
+	display: block;
+	text-align: center;
+	font-size:0.3rem;
+	line-height:0.6rem;
+}
+.mores{
+	width:6.4rem;
+	height:1.2rem;
+	position:absolute;
+	top:17.2rem;
+	border-bottom:solid 0.1rem #eee;
+}
+.but{
+	position:absolute;
+	color:#fff;
+	top:0.3rem;
+	left:2.5rem;
+	width:1.5rem;
+	height:0.5rem;
+	display: block;
+	line-height: 0.5rem;
+	background-color:#f00;
+	border:0px solid #f00;
+}
+.title5{
+	width:6.4rem;
+	height:1.5rem;
+	position:absolute;
+	top:18.8rem;
+}
+.title5>p{
+	width:6.4rem;
+	height:0.6rem;
+	display: block;
+	text-align: center;
+	font-size:0.3rem;
+	line-height:0.6rem;
+}
+.protect4{
+	width:6.4rem;
+	height:3rem;
+	position:absolute;
+	top:20.3rem;
+}
+.protect4>img{
+	width:6.4rem;
+	height:3rem;
+	
+}
+.title6{
+	position:absolute;
+	top:23.3rem;
+	width:6.4rem;
+	height:0.6rem;
+	display: block;
+	text-align: center;
+	font-size:0.3rem;
+	line-height:0.6rem;
+	border-bottom:dotted  0.02rem #ccc;
+}
+.protect5{
+	width:6.4rem;
+	height:3rem;
+	position:absolute;
+
+	top:24.2rem;
+}
+.protect5>img{
+	width:6.4rem;
+	height:3rem;
+	
+}
+.title7{
+	position:absolute;
+	top:27.2rem;
+	width:6.4rem;
+	height:0.6rem;
+	display: block;
+	text-align: center;
+	font-size:0.3rem;
+	line-height:0.6rem;
+	border-bottom:dotted  0.02rem #ccc;
+}
+.protect6{
+	width:6.4rem;
+	height:3rem;
+	position:absolute;
+	top:28.1rem;
+}
+.protect6>img{
+	width:6.4rem;
+	height:3rem;
+	
+}
+.mores1{
+	width:6.4rem;
+	height:1.2rem;
+	position:absolute;
+	top:31.1rem;
+	border-bottom:solid 0.1rem #eee;
+}
+.title8{
+	width:6.4rem;
+	height:1.5rem;
+	position:absolute;
+	top:32.6rem;
+}
+.title8>p{
+	width:6.4rem;
+	height:0.6rem;
+	display: block;
+	text-align: center;
+	font-size:0.3rem;
+	line-height:0.6rem;
+}
+.pri{
+	width:6.4rem;
+	height:3rem;
+	position: absolute;
+	top:34.1rem;
+}
+.pri-1{
+	width:3.2rem;
+	height:1.5rem;
+	position:absolute;	
+}
+.pri-1>img{
+	width:1.5rem;
+	height:1.5rem;
+	display: block;
+	text-align: center;
+}
+.pri-2{
+	width:3.2rem;
+	height:1.5rem;
+	position:absolute;
+	top: 1.5rem;
+}
+.pri-2-text1{
+	width:3rem;
+	height:0.75rem;
+	position:absolute;
+	display: block;
+	left:0.1rem;
+	border-bottom:0.01rem solid #ccc;
+}
+.pri-2-text1>p{
+	width:3rem;
+	height:0.375rem;
+	display: block;
+	text-align: center;
+	line-height: 0.375rem;
+}
+.pri-2-pic{
+	position:absolute;
+	top:0.8rem;
+	width:3rem;
+	height:0.375rem;
+	display: block;
+}
+.pri-2-pic>img{
+	width:0.75rem;
+	height:0.75rem;
+	display: block;
+	text-align: center;
+}
+.pri-3{
+	width:3.2rem;
+	height:1.5rem;
+	position:absolute;	
+	left:3.2rem;
+}
+.pri-3>img{
+	width:1.5rem;
+	height:1.5rem;
+	display: block;
+	text-align: center;
+}
+.pri-4{
+	width:3.2rem;
+	height:1.5rem;
+	position:absolute;
+	top: 1.5rem;
+	left:3.2rem;
+}
+.pris{
+	width:6.4rem;
+	height:3rem;
+	position: absolute;
+	top:37.3rem;
+	
+}
+.show{
+	display:none;
+}
