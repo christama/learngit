@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>map方法的使用</title>
+	<script src="jquery/jquery-1.6.4.min.js"></script>
+</head>
+<body>
+	<script>
+	$(function(){
+		var arr=[1,2,3,4,5];
+		var arrs=["张三","李四","腾讯","百度"]
+		var newarr=$.map(arrs,function(n,i){
+			if(n=="腾讯"){
+				return n+"(公司名)";
+			}else if(n=="百度"){
+				return n+"(每天用的东西)";
+			}else{
+				return n;
+			}
+			// return i==3?[n,8]:n;
+		})
+		alert(newarr.toString());
+	})
+	</script>
+</body>
+            

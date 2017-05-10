@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery-1.6.4.min.js"></script>
+	<style>
+
+	ul{
+		width:200px;
+		height:auto;
+		background-color:#f00;
+		list-style-type: none;
+		margin:0;
+		padding:0;
+	}
+	ul>li{
+		width:200px;
+		height:30px;
+		
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+		<ul>
+			<li>京东</li>
+			<li>淘宝</li>
+			<li>腾讯</li>
+			<li>百度</li>
+			<li>天猫</li>
+			<li>小米</li>
+			<li>阿里</li>
+		</ul>
+		
+		
+		<script>
+		$(function(){
+
+			$("li").bj("#0f0");
+			
+		})
+		$.fn.bj=function(a){
+			$(this).mouseover(function(){
+				$(this).css("background-color",a);
+			}).mouseout(function(){
+				$(this).css("background-color","");
+			
+		})
+		}
+		</script>
+	
+</body>
+</html>

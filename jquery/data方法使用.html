@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>data方法使用</title>
+	<script src="jquery/jquery-1.6.4.min.js"></script>
+	<style>
+	div{
+		width:200px;
+		height:auto;
+		background-color:#f00;
+		line-height: 30px;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+
+	<div id="menu"><h2>产品信息</h2></div>
+	
+	<script>
+	$(document).ready(function(){
+		var obj={"new1":{"title":"南湾","newsinfo":"是一个美丽的小山村"},"new2":{"title":"上庄","newsinfo":"在隔壁"},"new3":{"title":"方太口","newsinfo":"小学上学的地方"}}//模拟后台传的数据！
+		$.each(obj,function(name,value){
+			$("#menu").append("<div><h3>"+value.title+"</h3></div>");
+			$("#menu").children("div:last").data("news",value.newsinfo);			
+		})
+		$("h3").click(function(){
+				$(this).parent("div").append("<p>"+$(this).parent("div").data("news")+"</p>");
+			})	
+		// var arr=["123456789","987655423","9876548423","00000005423","222222222"];
+		// $("div").each(function(index){
+		// 	$(this).data("info",arr[index]);
+		// })
+		// $("h3").click(function(){
+		// $(this).parent("div").append("<p>"+$(this).parent("div").data("info")+"</p>");
+		// })
+
+
+	})
+	</script>	
+</body>
+</html>

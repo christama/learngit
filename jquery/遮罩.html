@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鱼眼效果</title>
+		<script src="jquery-1.6.4.min.js"></script>
+	<style>
+	.picture{
+		width:500px;
+		height:300px;
+		position:relative;
+	}
+	.nei{
+		position:absolute;
+		top:0;
+		left:0;
+		margin:0;
+		padding:0;
+		width:500px;
+		height:300px;
+		background:rgba(0,0,0,0.2);
+		z-index:100;
+		display: none;
+	}
+	.picture>img{
+		/*display:block;
+		position:absolute;*/
+		width:500px;
+		height:300px;
+		z-index:0;
+		
+	}
+	</style>
+
+</head>
+<body>
+	<div id='pic' class="picture"><img src="timg.jpg"><div class="nei" id="aa"><p style="display:block;width:150px;color:#fff;text-align:center;">只要998，只要998。</p></div></div>
+	<div id='pic1' class="picture" ><img src="timg1.jpg"><div class="nei" id="aa1"><p style="display:block;width:150px;color:#fff;text-align:center;">只要998，只要998。</p></div></div>
+	<div id='pic2' class="picture"><img src="timg2.jpg"><div class="nei" id="aa2"><p style="display:block;width:150px;color:#fff;text-align:center;">只要998，只要998。</p></div></div>
+	<div id='pic3' class="picture"><img src="timg3.jpg"><div class="nei" id="aa3"><p style="display:block;width:150px;color:#fff;text-align:center;">只要998，只要998。</p></div></div>
+	<script>
+	$(function(){	
+		$.abc("#pic","#aa");
+		$.abc("#pic1","#aa1");
+		$.abc("#pic2","#aa2");
+		$.abc("#pic3","#aa3");
+			// $("#pic").mouseover(function(){
+			// 	$("#aa").fadeIn(500)				
+			// })
+			// $("#aa").mouseout(function(){
+			// 	$(this).fadeOut(500)			
+			// })
+	})
+	$.extend({
+		abc:function(pic1,aa1){
+		$(pic1).mouseenter(function(){
+				$(aa1).fadeIn();				
+			})
+			$(aa1).mouseleave(function(){
+				$(aa1).fadeOut();		
+			})
+
+	}
+	})
+	</script>
+</body>
+</html>

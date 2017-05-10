@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Toggle二级菜单</title>
+	<script type="text/javascript" src="jquery/jquery-1.6.4.min.js"></script>
+	<style>
+	.toggle1{
+		width:200px;
+		height:300px;
+	}
+	h3{
+		width:200px;
+		height:30px;
+		background-color:#f0f;
+		text-align: center;
+		padding:0;
+		margin: 0;
+	}
+	.toggle1>ul{
+		list-style-type: none;
+		margin-left:-40px;
+		padding:0;
+		margin:0;
+		display: none;
+	}
+	.toggle1>ul>li{
+		width:200px;
+		height:30px;
+		text-align: center;
+		background-color: #f00;
+	}
+	.bj{
+		background-color:#0f0;
+	}
+	</style>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			var a=0;
+			$("h3").click(function(){
+				if($(this).hasClass("bj")){
+					$(this).removeClass("bj");
+				}else{
+					$(this).addClass("bj");
+				}
+				var i=$(this).index();
+				if(a%2==0){
+					$(this).next().slideDown(800);
+					a++;
+				}else{
+					$(this).next().slideUp(800);
+					a++;
+				}
+
+			})
+			// $("#tog1").mouseenter(function(){
+			// 	$(this).next("ul:hidden").slideDown(800);
+			// })
+			// $("#tog1").mouseleave(function(){
+			// 	$(this).next("ul:visible").slideUp(800);
+			// })
+		})
+	</script>
+	<div class="toggle1" id="toge">
+	<h3 id="tog1">产品介绍</h3>
+	<ul>
+		<li>产品经理</li>
+		<li>产品经理</li>
+		<li>产品经理</li>
+		<li>产品经理</li>
+	</ul>
+	<img src="a.jpg" style="width:200px;height:200px;">
+	</div>
+
+	
+</body>
+</html>
