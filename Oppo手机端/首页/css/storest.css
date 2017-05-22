@@ -1,0 +1,80 @@
+#banner>ul{list-style-type: none;}
+#banner>ul>li>img{
+	width: 6.4rem;
+	height: 9.7rem;
+}
+#banner>ul>li{margin: 0;padding: 0;}
+#banner>ul>li>a{
+	display: block;
+	position: absolute;
+	z-index: 3;
+	top: 8.2rem;
+	left: 2.55rem;
+	width: 1.3rem;
+	height: 0.5rem;
+	border-radius: 0.08rem;
+	font-size: 0.16rem;
+	line-height: 0.5rem;
+	text-align: center;
+	color: #333;
+	background-color: #fff;
+}
+section>ul{
+	width: 6rem;
+	height: auto;
+	overflow: hidden;
+	margin-left: .08rem;
+	margin-bottom: 1rem;
+	list-style-type: none;
+}
+section>ul>li{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 2.9rem;
+	height:5rem;
+	border:.02rem solid #ccc;
+}
+section>ul>li>img{
+	display: block;
+	float: right;
+	width: .6rem;
+	height: .6rem;
+	overflow: hidden;
+}
+section>ul>li>span{
+	width: 70%;
+	height: auto;
+	clear: both;
+}
+.box{
+	display: block;
+	width: 2rem;
+	height: 4rem;
+	margin: 0 auto;
+}
+.box>img{
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 0 auto;
+	padding-top: .6rem;	 
+}
+.box>p{
+	position: relative;
+	width: 2rem;
+	height: auto;
+	margin-top: .2rem;
+	margin-bottom: .4rem;
+	font-size: .2rem;
+	text-align: center;
+}
+.box>span{
+	display: block;
+	width: 2.3rem;
+	height: .4rem;
+	font-size: .4rem;
+	text-align: right;
+	color: #0a0;
+}

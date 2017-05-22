@@ -1,0 +1,49 @@
+#contains{
+	widows: 19.2rem;
+	height: 9rem;
+	z-index: 0;
+	
+}
+
+#contains>img{
+	width: 6.4rem;
+	height: 9rem;
+	position: absolute;
+    /*height: 6rem;*/
+}
+#show{
+	width: 6.4rem;
+	overflow: hidden;
+	height: 9rem;
+	position: relative;
+	
+}
+#circle{
+	position: absolute;
+	top: 7.5rem;
+	left: 4rem;
+	z-index: 10;
+/*	background: pink;*/
+	width: 3rem;
+	height: 0.5rem;
+}
+#circle .asd{
+	background-color:#35bb7e;
+}
+
+#circle>p{
+	width: 0.2rem;
+	height: 0.2rem;
+	border-radius: 0.1rem;
+	background-color:#999;
+	display: inline-block;	
+	
+}
+#c-img{
+	margin-top: 0.3rem;
+}
+#c-img img{
+	width: 6.4rem;
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,210 @@
+#content{
+	width: 6.4rem;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	
+}
+a{
+	text-decoration: none;
+}
+.banner{
+	width: 6.4rem;
+	height: auto;
+	position: relative;
+}
+.banner>img{
+	width: 6.4rem;
+	height: auto;
+}
+.form1{
+	width: 5.6rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 1.5rem;
+	left: 50%;
+	margin-left:-2.9rem; 
+	border:0.1rem  solid   rgba(255,255,255,0.5);
+	border-radius: 0.25rem;
+
+}
+ .form1>form{
+ 	position: relative;
+ 	border-radius: 0.2rem;
+
+ }
+ .form1 form .f{
+ 	border-radius: 0.3rem;
+ }
+
+
+.form1 input{
+	position: absolute;
+	top: 0;
+	width: 4.5rem;
+	height: 0.8rem;
+    border-radius: 3px 0 0 3px;
+	border: none;
+	font-size: 0.3rem;
+}
+.form1 button{
+	position: absolute;
+	top: 0;
+	left: 4.5rem;
+	width: 1.1rem;
+	height: 0.8rem;
+    border-radius: 3px;
+	border: none;
+	background: #2aad6f;
+	font-size: 0.3rem;
+}
+#add{
+	width: 5rem;
+	height: 3rem;
+	position: relative;
+	margin-left: 0.3rem;
+}
+  h3{
+	padding-left:0.5rem;
+	padding-bottom: 0.1rem;
+	font-family: 微软雅黑; 
+}
+#add>.form-group{
+	width: 4rem;
+	height: 0.8rem;
+
+}
+#add .form-group #province1{
+	width: 5rem;
+	height:0.8rem;
+	border-radius: 3px;
+	display: block;
+	margin-bottom: 0.1rem;
+}
+#add .form-group #city1{
+	width: 5rem;
+	height:0.8rem;
+	border-radius: 3px;
+	display: block;
+	margin-bottom: 0.1rem;
+}
+
+#add .form-group #district1{
+	width: 5rem;
+	height:0.8rem;
+	border-radius: 3px;
+	display: block;
+	margin-bottom: 0.1rem;
+}
+#exe{
+	width: 6.4rem;
+	height:auto;
+	background-color: #ededed;
+	position: relative;
+}
+#exe>.h{
+	font-size: 0.3rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0rem;
+    width: 6.4rem;
+    height: 0.3rem;
+
+}
+.loction-address{
+   width: 6rem;
+   height:3rem;
+   position: relative;
+   
+}
+.loction-address>.text1>.b1>.marker{
+	display: block;
+    width: 0.7rem;
+    height: 0.8rem;
+    background: url(../img/oppo2.png) no-repeat;
+    color: #fff;
+    font-size: 0.35rem;
+    text-align: center;
+    padding-top: 0.1rem;
+    position: absolute;
+    top: 0.04rem;
+    left: 0.05rem;}
+
+ .loction-address>ul>li>.text2{
+ 	width: 4rem;
+ 	height: 1rem;
+ 	position: relative;
+ 	font-size: 0.3rem;
+ 	margin-left: 1rem;}
+
+.loction-address>ul>li>.text2>.two{
+	width: 5rem;
+	height: 1.2rem;
+	position: relative;
+	left: 0rem;
+     top: -0.5rem;
+}
+.loction-address>ul>li>.text2>.two>.pot{
+	position: absolute;
+    top: 0;
+    right: 0;
+    color: #1f8657;
+}
+
+.loction-address>ul>li>.text3{
+	width: 6rem;
+	height: 1rem;
+	position: relative;
+	left:0rem;
+	top: 2rem;
+}
+a:hover{
+	color:  #1f8657;
+}
+.buto{
+	width: 6rem;
+	height: 1rem;
+	position: relative;
+	 background: #ededed;
+}
+.buto .pagination{
+	overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    width: 6rem;
+    height: auto;
+}
+
+.pagination li{
+display: inline-block;
+    background: #fff;
+    margin-right: -0.01rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: -1.9rem;
+  /*  background: #1f8657;*/
+    font-size: 0.5rem;
+text-align: center;
+    border-radius: 50%;
+
+}
+li.active {
+    background: #2aad6f;
+    color: #fff;
+}
+.form-aside{
+	width: 6rem;
+	height: 6rem;
+	position: relative;
+	background: #ededed;
+
+}
+.h-delta{
+	font-size: 0.5rem;
+	left: 0rem;
+}
+.form-asibe ul{
+	font-size: 0.3rem;
+	line-height: 0.5rem;
+	text-align: center;
+}

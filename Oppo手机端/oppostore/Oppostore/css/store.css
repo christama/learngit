@@ -1,0 +1,24 @@
+#clear{
+	width: 6.4rem;
+	height: 0.2rem;
+	position: relative;
+}
+#banner{
+	position: relative;
+	overflow: hidden;
+	width: 6.4rem;
+	height: auto;
+}
+section{
+	position: relative;
+	width: 6rem;
+	height: auto;
+	margin: 0 auto;
+}
+#footerlink{
+	position: relative;
+	width: 6.4rem;
+	height: 1.45rem;
+	/*background-color: #f6f6f6;*/
+	background-color: #f00;
+}

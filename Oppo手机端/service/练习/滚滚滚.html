@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gungungun</title>
+	<style>
+#b3{
+	 position:relative;
+     z-index: 0;
+     width:400px;
+     height:250px;
+     overflow:hidden;
+     border:1px solid #000;
+}
+#show{
+	position:absolute;	
+	width:1200px;
+	height:250px;
+}
+#show>img{
+	width:200px;
+	height:auto;
+}
+#left{
+	width:20px;
+	height:20px;
+	border:1px solid #ccc;
+	border-radius: 50%;
+	background-color: #ff0;
+	position:absolute;
+	top:100px;
+	left:10px;
+	z-index:1;
+	text-align:center;
+	/*opacity:0.7;*/
+}
+#right{
+	width:20px;
+	height:20px;
+	border:1px solid #ccc;
+	border-radius: 50%;
+	background-color: #ff0;
+	position:absolute;
+	top:100px;
+	left:370px;
+	z-index:1;
+	text-align:center;
+
+}
+	</style>
+</head>
+<body>
+	        <div id="b3">
+		 	    <div id="left"><</div>
+		 	      	<div id="show">
+		 	      	<img src="img/images5/pic16.jpg" alt=""><img src="img/images5/pic17.jpg" alt=""><img src="img/images5/pic18.jpg" alt=""><img src="img/images5/pic20.jpg" alt=""><img src="img/images5/pic17.jpg" alt=""><img src="img/images5/pic18.jpg" alt="">
+		 	      </div>
+		 	    <div id="right">></div>
+		    </div>
+		     <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript"> 
+      $(document).ready(function(){
+      $("#left").click(function(){
+        if($("#show").position().left<=-800){
+          $("#show").animate({"left":"0px"},1000);
+        }else{
+          $("#show").animate({"left":"-=400px"},1000);
+        }
+      })
+      $(document).ready(function(){
+        $("#right").click(function(){
+          if($("#show").position().left>=0){
+            $("#show").animate({"left":"-800px"},1000);
+          }else{
+            $("#show").animate({"left":"+=400px"},1000);
+          }
+        })
+      })
+    }) 
+    </script>
+</body>
+</html>

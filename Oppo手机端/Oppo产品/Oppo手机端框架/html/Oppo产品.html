@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Oppo手机端框架</title>
+	<link rel="stylesheet" href="../css/Oppo.css" />
+    <link rel="stylesheet" type="text/css" href="../css/product.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/zepto.fullpage.css"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="no" />    
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=yes"/>
+	<meta name="msapplication-tap-highlight" content="no" />
+	<script type="text/javascript" src="../js/xiangying.js" ></script>
+	<script type="text/javascript" src="../js/zepto-1.1.6.min.js" ></script>
+	<script type="text/javascript" src="../js/touch.min.js"></script>
+<!--	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>-->
+<!--	<script src="../js/js.fullpage.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/zepto.fullpage.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/product.js"></script>
+	<script>
+		
+		$(function(){					
+		$(window).scroll(function(){
+			if($(window).scrollTop()>180){
+				$("#return").show();
+				}else{
+				$("#return").hide();
+				}
+			})
+		$("#top").click(function(){
+			$("body").scrollTop(0);
+
+		})
+		$("#menu1").click(function(){
+			$("#index").hide();
+			$("#menu2").show();
+			$("#menu1").hide();
+			$("#menus").show();
+		})
+		$("#menu2").click(function(){
+			$("#menu1").show();
+			$("#menu2").hide();
+			$("#menus").hide();
+		})
+		$("#top").click(function(){
+			$("body").scrollTop(0);
+		})
+		var aa=0;
+		$("#man").click(function(){
+			if(aa%2==0){
+				$("#index").show();
+				$("#menus").hide();
+				$("#menu1").show();
+				$("#menu2").hide();
+				aa++;
+			}else{
+				$("#index").hide();
+				$("#menus").hide();
+				$("#menu1").show();
+				$("#menu2").hide();
+				aa++;
+			}
+			
+		})
+		var target = document.getElementById("liebiao");
+		 				var dx, dy;
+			 				touch.on('#liebiao', 'drag', function(ev) {
+			 					
+			 					dx = dx || 0;
+			 					dy = dy || 0;
+			 					var offx = dx + ev.x + "px";
+			 					var offy = dy + ev.y + "px";
+			 					this.style.webkitTransform = "translate3d(" + offx + ",0,0)";
+			 				});		
+//			$("#content").fullpage();
+	})
+		
+//		 $('.wp-inner').fullpage({
+//          change: function (e) {
+//              var cur = e.cur;
+//              var $page = $('.page').eq(cur);
+//              // 避免重复加载
+//              if ($page.data('load') == 1) {
+//                  return 1;
+//              }
+//              // 加载每屏内容
+//              $page.html($('#page' + (cur + 1)).html());
+//              // 标记已加载过的屏
+//              $page.data('load', 1);
+//          }
+//      });
+	
+	</script>
+</head>
+<style>
+	@font-face {font-family: "iconfont";
+          /*src: url('iconfont.eot'); *//* IE9*/
+          src: url('menu.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        
+          url('menu.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+          url('menu.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont {
+          font-family:"iconfont" !important;
+          font-size:0.5rem;
+          color:#35bb7e;
+          display: block;     
+          position:absolute;
+          top:0.25rem;
+          left:0.75rem;
+          font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }
+    @font-face {font-family: "iconfont";
+          src: url('logo.eot'); /* IE9*/
+          src: url('logo.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('logo.woff') format('woff'), /* chrome, firefox */
+          url('logo.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+          url('logo.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont1 {
+          font-family:"iconfont" !important;
+          font-size:0.2rem;
+          position:absolute;
+          top:0.4rem;
+          left:0.7rem;
+          color:#35bb7e;
+          font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        @font-face {font-family: "iconfont";
+          src: url('pen.eot'); /* IE9*/
+          src: url('pen.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('pen.woff') format('woff'), /* chrome, firefox */
+          url('pen.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+          url('pen.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont2 {
+          font-family:"iconfont" !important;
+          font-size:0.8rem;
+          background-color:rgba(0,0,0,0.01);
+          color:#ccc;
+		  position:absolute;
+          font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }
+         @font-face {font-family: "iconfont";
+          src: url('close.eot'); /* IE9*/
+             
+          position:absolute;
+          src: url('close.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('close.woff') format('woff'), /* chrome, firefox */
+          url('close.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+          url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont4 {
+          font-family:"iconfont" !important;
+          font-size:0.3rem;
+          color:#35bb7e;
+          display: block; 
+          position:absolute;
+          top:0.4rem;
+          left:0.85rem;
+          font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        
+	</style>
+<body>
+<div class="header">
+	<div class="menu">
+		<i class="iconfont" id="menu1" >&#xe613;</i>  
+		 <i class="iconfont4"  style="display:none;" id="menu2">&#xe629;</i>
+    </div>
+    <div class="logo">
+    	<i class="iconfont1">&#xe60f;</i>
+    </div>
+    <div class="man" id="man">
+    	<img src="../img/images/icon-menu-user.png">
+    </div>
+</div>
+<div class="menus" id="menus" >
+	<div class="liebiao"  id="liebiao">
+	<ul>
+		<li style="width:12rem;height:1rem;"><a href="b.html">首页</a><a href="#">产品</a><a href="#">商城</a><a href="#">体验店</a><a href="#">服务</a><a href="#">ColorOS</a></li>
+		<!--<li><a href="#">产品</a></li>
+		<li><a href="#">商城</a></li>
+		<li><a href="#">体验店</a></li>
+		<li><a href="#">服务</a></li>
+		<li><a href="#">ColorOS</a></li>-->
+	</ul>
+</div>
+</div>
+<div class="index" id="index">
+	<ul>
+		<li>我的订单</li>
+		<li>配送地址</li>
+		<li>优惠券</li>
+		<li>账户信息</li>
+		<li>购物车</li>
+		<li>登录</li>
+	</ul>
+</div>
+<div style="width:6.4rem;height:47rem;">
+	<!--主体内容！！不要删公共css里面的内容！！！-->
+	<div id="banner">
+		<img src="../img/images2/pic1.jpg"/>
+	</div>
+<ul id="myMenu">
+<li  id="page5" class="active"><a href="#firstPage" class="active">R系列</a></li>
+<li id="page2" ><a href="#secondPage">A系列</a></li>
+<li id="page3"><a href="#thirdPage">Find系列</a></li>
+<li id="page4"><a href="#fourthPage">N系列</a></li>
+</ul>
+	
+	
+	
+<div id="content">
+	<div id="firstPage">
+	<img src="../img/images2/pic7.png"/>1
+
+	</div>
+	<div id="secondPage">
+	<img src="../img/images2/pic7.png"/>2
+
+	</div>
+	
+	<div id="thirdPage">
+	<img src="../img/images2/pic7.png"/>3
+
+	</div>
+	<div id="fourthPage">
+	<img src="../img/images2/pic7.png"/>4
+    </div>
+</div>
+	<div id="last1">
+		<img src="../img/images2/pic5.jpg"/>
+	</div>
+	<div id="last2">
+		<img src="../img/images2/pic6.jpg"/>
+	</div>
+	<div id="last3">
+		<img src="../img/images2/pic8.png"/>
+	</div>
+	
+</div>
+<div class="return" id="return">
+	<i class="iconfont2"  id="top">&#xe696;</i>                  
+     <i class="iconfont2" style="top:1rem;color:#c00;" >&#xe780;</i>      
+</div>
+<div class="footer">
+	<div class="footer-top">
+		<div class="footer-left">
+			<p style="font-size:0.45rem;margin-top:0.1rem;">4001-666-888</p>
+			<p style="font-size:0.2rem;margin-top:-0.2rem;">(24小时全国服务热线)</p>
+		</div>
+		<div class="footer-right">
+			<img src="../img/images/icon-online.png">
+		</div>
+	</div>
+	<div class="footer-bottom">
+	    <div class="bottom-left">
+	    	<p>关注我们:</p><img src="../img/images/tubiao.png">
+	    </div>
+	</div>
+	<div class="bottom-text">
+		<p>@2015-2017OPPO 版本所有粤ICP备018576665785联系方式：18733507879</p>
+	</div>
+</div>
+
+</body>
+</html>
