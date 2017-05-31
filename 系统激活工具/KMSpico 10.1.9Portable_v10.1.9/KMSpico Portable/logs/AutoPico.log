@@ -1,0 +1,36 @@
+23:59:56:981 2017.04.05 AutoPico 16.0.0.0
+Official Site: 
+http://forums.mydigitallife.info/forums/51-KMS-tools
+KMSpico v10.1.9
+Time Start: 2017/4/5 23:59:56
+
+23:59:56:981 Checking Internet Connection...
+23:59:57:190 Windows Detected: Windows 10 Pro : Professional : 6.3 : 14393.0
+23:59:57:215 Loading SECOH-QAD...
+23:59:57:220 Set Registry : Image File Execution Options\SppExtComObj.exe:Debugger
+23:59:57:220 Using host: 10.49.41.83:1688
+23:59:57:221 Using method: SECOH-QAD
+23:59:57:314 Opening Firewall Port...
+23:59:57:399 Opening Firewall App...
+23:59:57:605 KMSEmulator Port: 1688
+23:59:57:607 Get Registry : SYSTEM\CurrentControlSet\Services\sppsvc:Start
+23:59:57:633 KMSEmulator running port: 1688
+23:59:58:048 Office 2010 Skipped
+23:59:58:048 Office 2016 Skipped
+23:59:58:048 Office 2013 Skipped
+23:59:58:290 Found Windows Products: 1
+23:59:58:292 Name: Windows(R), Professional edition
+Description: Windows(R) Operating System, VOLUME_MAK channel
+GracePeriodRemaining: 0
+LicenseStatus: 5
+PartialProductKey: 6MT6Y
+GenuineStatus: 0
+
+23:59:58:292 This Windows(R), Professional edition has a RETAIL/MAK KEY, if you wish activate it with KMS, then install a GVLK KEY
+23:59:58:293 Windows(R), Professional edition. (RETAIL/MAK) --> VL  ?
+23:59:58:293 Version Windows Skipped
+23:59:58:294 Closing Firewall Port...
+23:59:58:363 Closing Firewall App...
+23:59:58:436 Set Registry : HKEY_CURRENT_USER\Control Panel\Desktop:PaintDesktopVersion
+23:59:58:680 No Internet Connection Detected
+23:59:59:957 Unloading SECOH-QAD...

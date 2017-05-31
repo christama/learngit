@@ -1,0 +1,72 @@
+13:49:13:177 2017.05.24 KMS GUI ELDI 37.0.0.0
+Official Site: 
+http://forums.mydigitallife.info/forums/51-KMS-tools
+KMSpico v10.1.9
+Windows Detected: Windows 10 Enterprise : Enterprise : 6.3 : 14393.0
+
+13:49:13:223 Loading SECOH-QAD...
+13:49:13:223 Set Registry : Image File Execution Options\SppExtComObj.exe:Debugger
+13:49:13:223 Using host: 10.56.202.185:1688
+13:49:13:223 Using method: SECOH-QAD
+13:49:13:239 Time Start: 2017/5/24 13:49:12
+13:49:13:239 Checking Internet Connection...
+13:49:13:333 Windows Detected: Windows 10 Enterprise : Enterprise : 6.3 : 14393.0
+13:49:13:335 Using host: 10.56.202.185:1688
+13:49:13:335 Using method: SECOH-QAD
+13:49:13:354 Opening Firewall Port...
+13:49:13:404 Opening Firewall App...
+13:49:13:441 KMSEmulator Port: 1688
+13:49:13:442 Get Registry : SYSTEM\CurrentControlSet\Services\sppsvc:Start
+13:49:13:453 KMSEmulator running port: 1688
+13:49:13:457 Internet Connection Detected
+13:49:13:460 Synchronizing Time...
+13:49:13:558 Office 2010 Skipped
+13:49:13:568 Office 2016 Skipped
+13:49:13:561 Office 2013 Skipped
+13:49:13:734 Found Windows Products: 1
+13:49:13:738 Name: Windows(R), Enterprise edition
+Description: Windows(R) Operating System, VOLUME_KMSCLIENT channel
+GracePeriodRemaining: 0
+LicenseStatus: 5
+PartialProductKey: 2YT43
+GenuineStatus: 1
+
+13:49:13:901 DisableKeyManagementServiceHostCaching 0
+13:49:13:901 Set Registry : SoftwareProtectionPlatform:KeyManagementServiceName
+13:49:13:901 Set Registry : SoftwareProtectionPlatform:KeyManagementServicePort
+13:49:14:048 Time synchronized
+13:49:19:225 Activating Windows
+13:49:19:510 SetKeyManagementServiceMachine: 0: 10.56.202.185
+13:49:19:518 SetVLActivationTypeEnabled 0
+13:49:20:074 Connection accepted from [::ffff:127.0.0.1]:49951
+13:49:20:461 Received request: v6, AppID: 55c92734-d682-4d71-983e-d6ec3f16059f, Machine: 1-PC
+13:49:20:653 Sending response: v6, PID: 06401-00206-313-806081-03-2052-9600.0000-2752016, HwID: B27E16E2AE25FB66
+13:49:20:670 Connection closed
+13:49:34:588 Windows(R), Enterprise edition Activated 0
+13:49:34:628 Set Registry : SoftwareProtectionPlatform:KeyManagementServiceName
+13:49:34:628 Set Registry : SoftwareProtectionPlatform:KeyManagementServicePort
+13:49:34:632 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\4f414197-0fc2-4c01-b68a-86cbb9ac254c:KeyManagementServiceName
+13:49:34:633 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\4f414197-0fc2-4c01-b68a-86cbb9ac254c:KeyManagementServicePort
+13:49:34:634 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\6bf301c1-b94a-43e9-ba31-d494598c47fb:KeyManagementServiceName
+13:49:34:634 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\6bf301c1-b94a-43e9-ba31-d494598c47fb:KeyManagementServicePort
+13:49:34:635 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\b322da9c-a2e2-4058-9e4e-f59a6970bd69:KeyManagementServiceName
+13:49:34:635 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\b322da9c-a2e2-4058-9e4e-f59a6970bd69:KeyManagementServicePort
+13:49:34:636 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\d450596f-894d-49e0-966a-fd39ed4c4c64:KeyManagementServiceName
+13:49:34:637 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\d450596f-894d-49e0-966a-fd39ed4c4c64:KeyManagementServicePort
+13:49:34:646 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\4a5d124a-e620-44ba-b6ff-658961b33b9a:KeyManagementServiceName
+13:49:34:647 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\4a5d124a-e620-44ba-b6ff-658961b33b9a:KeyManagementServicePort
+13:49:34:647 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\b322da9c-a2e2-4058-9e4e-f59a6970bd69:KeyManagementServiceName
+13:49:34:648 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\b322da9c-a2e2-4058-9e4e-f59a6970bd69:KeyManagementServicePort
+13:49:34:648 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\e13ac10e-75d0-4aff-a0cd-764982cf541c:KeyManagementServiceName
+13:49:34:648 Set Registry : SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663\e13ac10e-75d0-4aff-a0cd-764982cf541c:KeyManagementServicePort
+13:49:34:658 ClearKeyManagementServiceMachine 0
+13:49:34:667 ClearKeyManagementServicePort 0
+13:49:34:702 Closing Firewall Port...
+13:49:34:804 Closing Firewall App...
+13:49:34:860 Set Registry : HKEY_CURRENT_USER\Control Panel\Desktop:PaintDesktopVersion
+13:49:36:407 Unloading SECOH-QAD...
+13:49:36:408 Del Registry : SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SppExtComObj.exe:
+13:49:36:411 Killing: SECOH-QAD
+13:49:36:436 Time Finish: 2017/5/24 13:49:36
+13:49:36:446 Total Time: 23 seconds
+13:49:36:512 Client listener shut down
